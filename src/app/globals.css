@@ -67,3 +67,12 @@
       @apply bg-background text-foreground;
     }
   }
+
+  .banner-background {
+    background-image: url('/assets/Splash.png');
+    background-size: cover;
+    background-position: center center;
+    /* height: 90vh; */
+  }
+  
+  

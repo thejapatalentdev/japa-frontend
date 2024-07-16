@@ -1,3 +1,19 @@
+import Banner from "@/Components/Banner/Banner";
+import CvRevamp from "@/Components/CvRevamp/CvRevamp";
+import Navbar from "@/Components/Navbar/Navbar";
+import Notice from "@/Components/Notice/Notice";
+import OurCourses from "@/Components/OurCourses/OurCourses";
+import WhatWeDone from "@/Components/WhatWeDone/WhatWeDone";
+import WhyJapa from "@/Components/WhyJapa/WhyJapa";
+
 export default function page() {
-  return <main>Hello</main>;
+  return <main>
+    <Navbar />
+    <Banner />
+    <Notice />
+    <WhatWeDone />
+    <OurCourses />
+    <WhyJapa />
+    <CvRevamp />
+  </main>;
 }
