@@ -1,3 +1,4 @@
+import AvailableJobs from "@/Components/AvailableJobs/AvailableJobs";
 import Banner from "@/Components/Banner/Banner";
 import CvRevamp from "@/Components/CvRevamp/CvRevamp";
 import Navbar from "@/Components/Navbar/Navbar";
@@ -15,5 +16,6 @@ export default function page() {
     <OurCourses />
     <WhyJapa />
     <CvRevamp />
+    <AvailableJobs />
   </main>;
 }

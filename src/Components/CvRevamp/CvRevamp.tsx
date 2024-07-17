@@ -4,19 +4,19 @@ import Typography from "../Typography/Typography";
 
 const CvRevamp = () => {
   return (
-    <div className=" px-[10rem] py-10">
-      <div className="bg-[#5922A9] rounded-[30px] px-20 py-[10rem] relative overflow-hidden">
-        <div className="grid grid-cols-2">
+    <div className="px-4 lg:px-[10rem] py-10">
+      <div className="bg-[#5922A9] rounded-[30px] px-20 py-[6rem] relative overflow-hidden">
+        <div className="grid lg:grid-cols-2">
           <Imageview
             src="/assets/Note.png"
-            width="w-[70%]"
+            width="lg:w-[70%] w-full"
             className="m-auto"
           />
           <div>
-            <div className="mt-20">
+            <div className="mt-10">
               <Imageview
                 src="/assets/Stroke.png"
-                className="absolute -top-20 right-3"
+                className="absolute -top-20 right-3 hidden lg:block"
                 width="w-[15rem]"
               />
               <Typography variant="primary" size="sm" className="!text-white">
