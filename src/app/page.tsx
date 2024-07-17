@@ -1,5 +1,6 @@
 import AvailableJobs from "@/Components/AvailableJobs/AvailableJobs";
 import Banner from "@/Components/Banner/Banner";
+import Community from "@/Components/Community/Community";
 import CvRevamp from "@/Components/CvRevamp/CvRevamp";
 import Navbar from "@/Components/Navbar/Navbar";
 import Notice from "@/Components/Notice/Notice";
@@ -17,5 +18,6 @@ export default function page() {
     <WhyJapa />
     <CvRevamp />
     <AvailableJobs />
+    <Community />
   </main>;
 }

@@ -10,6 +10,7 @@ import {
 } from "../ui/card";
 import { title } from "process";
 import Button from "../Button/Button";
+import Link from "next/link";
 
 const newJobsData = [
   {
@@ -111,12 +112,23 @@ const AvailableJobs = () => {
                 </div>
               </CardContent>
               <CardFooter>
-                <Button variant="secondary" className="w-full">Apply Now</Button>
+                <Button variant="secondary" className="w-full">
+                  Apply Now
+                </Button>
               </CardFooter>
             </Card>
           </>
         ))}
       </div>
+      <Link href={"#"}>
+        <Typography
+          variant="primary"
+          size="sm"
+          className="underline !text-[#5922A9] text-center"
+        >
+          See more jobs
+        </Typography>
+      </Link>
     </div>
   );
 };
