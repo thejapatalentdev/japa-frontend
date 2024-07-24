@@ -1,7 +1,9 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import Typography from "../Typography/Typography";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const homeLinks = [
@@ -28,15 +30,29 @@ const Navbar = () => {
       link: "/auth/login",
     },
   ];
+
+  const pathname = usePathname();
   return (
     <div>
       <div className="md:flex justify-between items-center border-b boder-t-0 border-r-0 border-l-0 pt-9 pb-3 hidden px-20">
         <div className="flex gap-3 items-center">
           {homeLinks.map(({ label, link }, index) => (
             <>
-              <div className="border border-black rounded-full py-2 px-4 hover:bg-[#5922A9]">
+              <div
+                className={`border border-black rounded-full py-2 px-4 ${
+                  pathname === link ? "bg-[#5922A9] border-none" : ""
+                }`}
+                key={index}
+              >
                 <Link href={link}>
-                  <Typography variant="tertiary" size="sm" weight="medium" className="hover:text-white transistion-all ease-in-out">
+                  <Typography
+                    variant="tertiary"
+                    size="sm"
+                    weight="medium"
+                    className={`transistion-all ease-in-out ${
+                      pathname === link ? "!text-white" : ""
+                    }`}
+                  >
                     {label}
                   </Typography>
                 </Link>
@@ -58,9 +74,21 @@ const Navbar = () => {
           <div className="flex gap-3 items-center">
             {leftLinks.map(({ label, link }, index) => (
               <>
-                <div className="border  border-black rounded-full py-2 px-4 hover:bg-[#5922A9] hover:text-white transistion-all ease-in-out">
+                <div
+                  className={`border border-black rounded-full py-2 px-4 ${
+                    pathname === link ? "bg-[#5922A9] border-none" : ""
+                  }`}
+                  key={index}
+                >
                   <Link href={link}>
-                    <Typography variant="tertiary" size="sm" weight="medium" className="hover:text-white transistion-all ease-in-out">
+                    <Typography
+                      variant="tertiary"
+                      size="sm"
+                      weight="medium"
+                      className={`transistion-all ease-in-out ${
+                        pathname === link ? "!text-white" : ""
+                      }`}
+                    >
                       {label}
                     </Typography>
                   </Link>
