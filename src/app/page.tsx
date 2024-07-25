@@ -8,14 +8,16 @@ import WhatWeDone from "@/Components/WhatWeDone/WhatWeDone";
 import WhyJapa from "@/Components/WhyJapa/WhyJapa";
 
 export default function page() {
-  return <main>
-    <Navbar />
-    <Banner />
-    <Notice />
-    <WhatWeDone />
-    <OurCourses />
-    <WhyJapa />
-    <CvRevamp />
-    <AvailableJobs />
-  </main>;
+  return (
+    <main>
+      <Navbar />
+      <Banner />
+      <Notice />
+      <WhatWeDone />
+      <OurCourses />
+      <WhyJapa />
+      <CvRevamp />
+      <AvailableJobs />
+    </main>
+  );
 }

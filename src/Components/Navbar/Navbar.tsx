@@ -36,7 +36,12 @@ const Navbar = () => {
             <>
               <div className="border border-black rounded-full py-2 px-4 hover:bg-[#5922A9]">
                 <Link href={link}>
-                  <Typography variant="tertiary" size="sm" weight="medium" className="hover:text-white transistion-all ease-in-out">
+                  <Typography
+                    variant="tertiary"
+                    size="sm"
+                    weight="medium"
+                    className="hover:text-white transistion-all ease-in-out"
+                  >
                     {label}
                   </Typography>
                 </Link>
@@ -60,7 +65,12 @@ const Navbar = () => {
               <>
                 <div className="border  border-black rounded-full py-2 px-4 hover:bg-[#5922A9] hover:text-white transistion-all ease-in-out">
                   <Link href={link}>
-                    <Typography variant="tertiary" size="sm" weight="medium" className="hover:text-white transistion-all ease-in-out">
+                    <Typography
+                      variant="tertiary"
+                      size="sm"
+                      weight="medium"
+                      className="hover:text-white transistion-all ease-in-out"
+                    >
                       {label}
                     </Typography>
                   </Link>
