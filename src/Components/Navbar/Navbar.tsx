@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MobileMenu from "./MobileMenu";
 import React from "react";
 import Typography from "../Typography/Typography";
 import Image from "next/image";
@@ -30,8 +31,8 @@ const Navbar = () => {
   ];
   return (
     <div>
-      <div className="md:flex justify-between items-center border-b boder-t-0 border-r-0 border-l-0 pt-9 pb-3 hidden px-20">
-        <div className="flex gap-3 items-center">
+      <div className="md:flex justify-between items-center border-b boder-t-0 border-r-0 border-l-0 pt-9 pb-3 px-20">
+        <div className="xl:flex xl:gap-3 lg:flex lg:gap-3 md:flex md:gap-3 items-center hidden">
           {homeLinks.map(({ label, link }, index) => (
             <>
               <div className="border border-black rounded-full py-2 px-4 hover:bg-[#5922A9]">
@@ -49,18 +50,20 @@ const Navbar = () => {
             </>
           ))}
         </div>
-        <div>
+        <div className="flex gap-16">
           <Image
             src={"/assets/JAPA-LOGO.svg"}
             alt=""
             width={0}
             height={0}
             sizes="100vw"
-            className="w-full h-auto object-contain object-center"
+            className="w-[100px] xl:w-full h-auto object-contain object-center"
           />
+          <MobileMenu />
         </div>
+
         <div>
-          <div className="flex gap-3 items-center">
+          <div className="xl:flex xl:gap-3 lg:flex lg:gap-3 md:flex md:gap-3 hidden items-center">
             {leftLinks.map(({ label, link }, index) => (
               <>
                 <div className="border  border-black rounded-full py-2 px-4 hover:bg-[#5922A9] hover:text-white transistion-all ease-in-out">

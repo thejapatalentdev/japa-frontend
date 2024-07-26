@@ -70,7 +70,7 @@ const AvailableJobs = () => {
       >
         Hot Jobs Available Now
       </Typography>
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 p-10">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-10">
         {newJobsData.map((data, index) => (
           <>
             <Card>
