@@ -5,7 +5,7 @@ import Imageview from "../Imageview/Imageview";
 
 const Banner = () => {
   return (
-    <div className="banner-background md:h-[100vh] 2xl:h-[80vh]">
+    <div className="banner-background md:h-[100vh] 2xl:h-[80vh] overflow-hidden">
       <div className="grid md:grid-cols-2 lg:px-20 px-5">
         <div className="pt-[10rem]">
           <div className="">

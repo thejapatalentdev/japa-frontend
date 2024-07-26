@@ -17,6 +17,10 @@ const navLinks: Link[] = [
     href: "/courses",
   },
   {
+    label: "Jobs",
+    href: "/jobs",
+  },
+  {
     label: "Login",
     href: "/login",
   },

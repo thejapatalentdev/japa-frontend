@@ -26,7 +26,7 @@ export default function Footer() {
     },
     {
       label: x,
-      path: "",
+      path: "https://x.com/japatechglobal",
     },
     {
       label: Linkedln,
