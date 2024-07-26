@@ -1,5 +1,6 @@
 "use client";
 import { Poppins } from "next/font/google";
+import Navbar from "@/Components/Navbar/Navbar";
 import Footer from "@/Components/Footer/Footer";
 import "./globals.css";
 
@@ -16,6 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className}`}>
+        <Navbar />
+
         <main className="">{children}</main>
         <Footer />
       </body>
