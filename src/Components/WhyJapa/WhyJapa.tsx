@@ -34,7 +34,7 @@ const WhyJapa = () => {
             Why Japa?
           </Typography>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 mt-8">
           <div className="grid lg:grid-cols-2 gap-7">
             {japaDataItems.map(({ img, title, desc }, index) => (
               <>

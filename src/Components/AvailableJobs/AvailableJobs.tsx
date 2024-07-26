@@ -85,25 +85,28 @@ const AvailableJobs = () => {
                 <CardDescription>{data.jobType}</CardDescription>
                 <div className="grid grid-cols-3 items-center gap-3 mt-10 mb-2">
                   <div className="border border-[#CAC5CA] rounded-full py-2 px-4">
-                    <Typography variant="tertiary" size="sm">
+                    <Typography
+                      variant="tertiary"
+                      size="sm"
+                      className="min-w-[200px]"
+                    >
                       {data.buttonOne}
                     </Typography>
                   </div>
                   <div className="border border-[#CAC5CA] rounded-full py-2 px-4 text-nowrap">
-                    <Typography variant="tertiary" size="sm">
+                    <Typography
+                      variant="tertiary"
+                      size="sm"
+                      className="min-w-[200px]"
+                    >
                       {data.buttonTwo}
-                    </Typography>
-                  </div>
-                  <div className="border border-[#CAC5CA] rounded-full py-2 px-4">
-                    <Typography variant="tertiary" size="sm">
-                      {data.buttonThree}
                     </Typography>
                   </div>
                   <div className="border border-[#CAC5CA] rounded-full py-2 px-4">
                     <Typography
                       variant="tertiary"
                       size="sm"
-                      className="text-nowrap"
+                      className="text-nowrap min-w-[200px]"
                     >
                       {data.buttonFour}
                     </Typography>
@@ -111,7 +114,9 @@ const AvailableJobs = () => {
                 </div>
               </CardContent>
               <CardFooter>
-                <Button variant="secondary" className="w-full">Apply Now</Button>
+                <Button variant="secondary" className="w-full">
+                  Apply Now
+                </Button>
               </CardFooter>
             </Card>
           </>

@@ -48,7 +48,7 @@ const Banner = () => {
           </div>
         </div>
         <div className="md:flex relative">
-          <div className="absolute top-[170px]">
+          <div className="absolute top-[270px]">
             <Imageview src="/assets/Statistics.svg" width="w-full" />
           </div>
           <Imageview
@@ -57,11 +57,19 @@ const Banner = () => {
             height="h-auto"
             className="pt-[4.8rem]"
           />
-          <div className="absolute top-[340px] right-[370px] hidden lg:block">
-            <Imageview src="/assets/Bulb.svg" width="w-full" />
+          <div className="absolute xl:top-[340px] xl:right-[150px] lg:top-[350px] lg:right-[90px] hidden lg/:block">
+            <Imageview
+              src="/assets/Bulb.svg"
+              width="w-full"
+              className="lg:w-[60px]"
+            />
           </div>
-          <div className="absolute top-[140px] right-[170px] hidden lg:block">
-            <Imageview src="/assets/Circle.svg" width="w-full" />
+          <div className="absolute xl:top-[140px] xl:right-[30px] lg:top-[140px] lg:right-[-50px] hidden lg:block">
+            <Imageview
+              src="/assets/Circle.svg"
+              width="w-full"
+              className="lg:w-[110px]"
+            />
           </div>
         </div>
       </div>
