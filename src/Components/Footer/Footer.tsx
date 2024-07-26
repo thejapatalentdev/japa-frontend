@@ -73,7 +73,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-8">
             {footerLinks.map((link) => (
-              <Link href={link.path}>
+              <Link href={link.path} key={link.path}>
                 <Image
                   src={link.label}
                   width={30}

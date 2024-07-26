@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="xl:flex xl:gap-3 lg:flex lg:gap-3 md:flex md:gap-3 items-center hidden">
           {homeLinks.map(({ label, link }, index) => (
             <>
-              <div className="border border-black rounded-full py-2 px-4 hover:bg-[#5922A9]">
+              <div className="border border-black hover:border-none rounded-full py-2 px-4 hover:bg-[#5922A9]">
                 <Link href={link}>
                   <Typography
                     variant="tertiary"
@@ -66,7 +66,7 @@ const Navbar = () => {
           <div className="xl:flex xl:gap-3 lg:flex lg:gap-3 md:flex md:gap-3 hidden items-center">
             {leftLinks.map(({ label, link }, index) => (
               <>
-                <div className="border  border-black rounded-full py-2 px-4 hover:bg-[#5922A9] hover:text-white transistion-all ease-in-out">
+                <div className="border  border-black hover:border-none rounded-full py-2 px-4 hover:bg-[#5922A9] hover:text-white transistion-all ease-in-out">
                   <Link href={link}>
                     <Typography
                       variant="tertiary"
