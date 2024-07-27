@@ -65,15 +65,15 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
   }
 }
 
 .brutalist-card {
-  border: 2px solid #5922A9;
+  border: 2px solid #5922a9;
   background-color: #fff;
   padding: 1.5rem;
-  box-shadow: 5px 5px 0 #5922A980;
+  box-shadow: 5px 5px 0 #5922a980;
   font-family: "Arial", sans-serif;
   border-radius: 12px;
 }
-
