@@ -1,8 +1,10 @@
+"use client";
 import Link from "next/link";
 import MobileMenu from "./MobileMenu";
 import React from "react";
 import Typography from "../Typography/Typography";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const homeLinks = [
@@ -29,19 +31,28 @@ const Navbar = () => {
       link: "/auth/login",
     },
   ];
+
+  const pathname = usePathname();
   return (
     <div>
       <div className="md:flex justify-between items-center border-b boder-t-0 border-r-0 border-l-0 pt-9 pb-3 px-20">
         <div className="xl:flex xl:gap-3 lg:flex lg:gap-3 md:flex md:gap-3 items-center hidden">
           {homeLinks.map(({ label, link }, index) => (
             <>
-              <div className="border border-black hover:border-none rounded-full py-2 px-4 hover:bg-[#5922A9]">
+              <div
+                className={`border border-black rounded-full py-2 px-4 ${
+                  pathname === link ? "bg-[#5922A9] border-none" : ""
+                }`}
+                key={index}
+              >
                 <Link href={link}>
                   <Typography
                     variant="tertiary"
                     size="sm"
                     weight="medium"
-                    className="hover:text-white transistion-all ease-in-out"
+                    className={`transistion-all ease-in-out ${
+                      pathname === link ? "!text-white" : ""
+                    }`}
                   >
                     {label}
                   </Typography>
@@ -66,13 +77,20 @@ const Navbar = () => {
           <div className="xl:flex xl:gap-3 lg:flex lg:gap-3 md:flex md:gap-3 hidden items-center">
             {leftLinks.map(({ label, link }, index) => (
               <>
-                <div className="border  border-black hover:border-none rounded-full py-2 px-4 hover:bg-[#5922A9] hover:text-white transistion-all ease-in-out">
+                <div
+                  className={`border border-black rounded-full py-2 px-4 ${
+                    pathname === link ? "bg-[#5922A9] border-none" : ""
+                  }`}
+                  key={index}
+                >
                   <Link href={link}>
                     <Typography
                       variant="tertiary"
                       size="sm"
                       weight="medium"
-                      className="hover:text-white transistion-all ease-in-out"
+                      className={`transistion-all ease-in-out ${
+                        pathname === link ? "!text-white" : ""
+                      }`}
                     >
                       {label}
                     </Typography>
