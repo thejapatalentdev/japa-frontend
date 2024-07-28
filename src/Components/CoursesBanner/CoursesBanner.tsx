@@ -8,7 +8,7 @@ export default function CoursesBanner() {
   return (
     <div className="my-16 ">
       {" "}
-      <div className="m-auto flex justify-center items-center bg-[#5a22a9] w-full max-w-[80vw] h-[65vh] rounded-[30px] text-white text-5xl font-bold">
+      <div className="m-auto flex justify-center items-center bg-[#5a22a9] w-full max-w-[80vw] h-[65vh] rounded-[30px] text-white text-5xl font-bold p-10">
         <div className="grid grid-cols-2 place-items-center px-8 py-4 relative">
           <p className="w-full">Learn Skills for your Dream Job</p>
 
