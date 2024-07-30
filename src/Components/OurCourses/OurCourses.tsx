@@ -2,25 +2,29 @@ import React from "react";
 import Typography from "../Typography/Typography";
 import Imageview from "../Imageview/Imageview";
 import Button from "../Button/Button";
+import Link from "next/link";
 
 const courseCards = [
   {
-    img: "",
-    title: "Data Analysis",
-    desc: "",
-    bgColor: "bg-[#DDFEBF]",
-  },
-  {
-    img: "",
-    title: "Product Management",
-    desc: "",
+    img: "/assets/Product.svg",
+    title: "ProductManagement",
+    desc: "Learn product management from industry experts. Gain practical skills and hands-on experience.",
     bgColor: "bg-[#B7AEDA]",
+    path: "/courses/ProductManagement",
   },
   {
-    img: "",
+    img: "/assets/Girl-reading.png",
     title: "Data Analysis",
-    desc: "",
+    desc: "Learn data analysis from industry experts. Gain practicalskills and hands-on experience.",
+    bgColor: "bg-[#defebf]",
+    path: "/courses/DataAnalysis",
+  },
+  {
+    img: "/assets/Girl-reading.png",
+    title: "SocialMediaManagement",
+    desc: "Learn social media management from industry experts. Gain practical skills and hands-on experience.",
     bgColor: "bg-[#FAEACC]",
+    path: "/courses/SocialMediaManagement",
   },
 ];
 
@@ -40,14 +44,10 @@ const OurCourses = () => {
       </Typography>
       <div className="my-20 px-5 md:px-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-3 lg:gap-20">
-          {courseCards.map(({ img, title, desc, bgColor }, index) => (
+          {courseCards.map(({ img, title, desc, bgColor, path }, index) => (
             <>
               <div className={`${bgColor} p-6 rounded-xl lg:w-full m-auto`}>
-                <Imageview
-                  src="/assets/Girl-reading.png"
-                  width="w-full"
-                  height="h-auto"
-                />
+                <Imageview src={img} width="w-full" height="h-auto" />
                 <Typography
                   variant="primary"
                   size="xl"
@@ -57,11 +57,12 @@ const OurCourses = () => {
                   {title}
                 </Typography>
                 <Typography variant="primary" size="sm">
-                  Learn data analysis from industry experts. Gain practical
-                  skills and hands-on experience.
+                  {desc}
                 </Typography>
                 <div className="pt-20 pb-3">
-                  <Button variant="tertiary">Learn more</Button>
+                  <Button variant="tertiary">
+                    <Link href={path}>Learn more</Link>
+                  </Button>
                 </div>
               </div>
             </>

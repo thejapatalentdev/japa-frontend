@@ -1,7 +1,8 @@
 import React from "react";
-import Typography from "../Typography/Typography";
-import Imageview from "../Imageview/Imageview";
-import Button from "../Button/Button";
+import Typography from "../../../../Components/Typography/Typography";
+import Imageview from "../../../../Components/Imageview/Imageview";
+import Button from "../../../../Components/Button/Button";
+import Link from "next/link";
 
 const CourseOverviewCard = () => {
   return (
@@ -31,7 +32,9 @@ const CourseOverviewCard = () => {
           </div>
           <div className="pt-20">
             <Button variant="primary" className="w-full">
-              Enroll
+              <Link href="https://docs.google.com/forms/d/1Nc2CZoe7UJ7WqbNj7Gw9gXuyKBcP11hRJo25GvQmgYI/viewform?edit_requested=true">
+                Enroll
+              </Link>
             </Button>
           </div>
         </div>

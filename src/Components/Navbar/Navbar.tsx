@@ -18,7 +18,7 @@ const Navbar = () => {
     },
     {
       label: "CV Revamp",
-      link: "/cv-revamp",
+      link: "https://docs.google.com/forms/d/1OsZ5mkU3BAB0Cfv_BmcrlCjU7ZUGKm22GSWtSRT7px4/viewform?ref=dishapages&edit_requested=true",
     },
   ];
   const leftLinks = [

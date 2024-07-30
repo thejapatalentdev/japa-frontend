@@ -1,6 +1,6 @@
 import React from "react";
-import Typography from "../Typography/Typography";
-import Imageview from "../Imageview/Imageview";
+import Typography from "../../../../Components/Typography/Typography";
+import Imageview from "../../../../Components/Imageview/Imageview";
 
 interface IUserReqProps {
   key: number;
@@ -72,7 +72,7 @@ const CoursesOverview = () => {
   return (
     <div>
       <Typography variant="primary" size="xl" weight="bold">
-        Data Analysis Certification
+        Product Management Certification
       </Typography>
       <div className="py-10 w-full md:w-[70%] lg:w-[60%] leading-[27px] space-y-4">
         <Typography variant="primary" size="sm">
@@ -141,8 +141,7 @@ const CoursesOverview = () => {
         {courseOutline.map(({ key, label }) => (
           <>
             <Typography variant="primary" size="md" weight="semibold" key={key}>
-              week{key}: {" "}
-              <span className="font-normal">{label}</span>
+              week{key}: <span className="font-normal">{label}</span>
             </Typography>
           </>
         ))}
